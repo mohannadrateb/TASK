@@ -1,0 +1,25 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">name</th>
+      <th scope="col">QuestionText</th>
+      <th scope="col">Type</th>
+      <th scope="col">Required</th>
+      <th scope="col"> Delete</th>
+      <th scope="col"> edit </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of response">
+      <th> {{item?.login}} </th>
+      <th> {{item?.node_id}}</th>
+
+      <th>{{item?.avatar_url}}</th>
+
+      <th>{{item?.id}}</th>
+      <th> <button class="btn btn-primary">Delete</button></th>
+      <th> <button class="btn btn-primary"> Edit </button></th>
+
+    </tr>
+  </tbody>
+</table>
